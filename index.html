@@ -1,191 +1,63 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <style>
-body {
-  margin: 0;
-  }
-  
-/*Everything goes inside here.*/
-.wrapper {
-  width: 900px;
-  margin: 0 auto;
-  }
-  
-.sidebar-img, .footer, .title, .links, .box {
-  margin-top: 25px;
-  }
-  
-.title, .links, .footer {
-  text-align: center;
-  }
-  
-/*Navigation links.*/
-.links ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  }
-  
-.links li {
-  display: inline-block;
-  }
-
-/*Some fancy code for fun, to add special characters around the navigation links. Change content to "" if you don't want these.*/
-.links li:before {
-  content: "ã€Œ";
-  }
-  
-.links li:after {
-  content: "ã€ âˆ· ";
-  }
-  
-.links .last:after {
-  content: "ã€";
-  }
-  
-.links li:before, .links li:after {
-  letter-spacing: 0.1em;
-  }
-  
-/*Basic box code that is used for all content boxes on the page.*/
-.box {
-  border: 1px solid black;
-  padding: 0.5em 1em;
-  }
-  
-/*Goes inside the box class. Not given any style by default, but can be used for stuff like fancy borders.*/
-.inner {
-  
-  }
-  
-/*Prevent image overflow.*/
-.box img, .sidebar img {
-  max-width: 100%;
-  height: auto;
-  }
-  
-/*Wrapper for the sidebar.*/
-.sidebar {
-  width: 200px;
-  float: left;
-  }
-  
-/*Container for the sidebar image.*/
-.sidebar-image {
-  border: 1px solid black;
-  }
-  
-/*Remove extra padding line at the bottom of the image.*/
-.sidebar-image img {
-  display: block;
-  }
-  
-/*This is where the title, navbar, and main content all go.*/
-.main-wrapper {
-  margin-left: 225px;
-  }
-  
-/*Two columns by default. The "single-column" class can be added to make it one column.*/
-.main {
-  columns: 2;
-  column-gap: 25px;
-  }
-  
-/*Make sure boxes don't spread over multiple columns.*/
-.main .box {
-  display: inline-block;
-  }
-  
-.single-column {
-  columns: 1;
-  }
-  
-.footer {
-  margin-bottom: 25px;
-  }
-  
-@media(max-width:915px) {
-  .wrapper {    
-    width: 95%;
-    }
-    
-  .main-wrapper {
-    width: calc(100% - 225px);
-    }
-  }
-  
-@media (orientation: portrait), (max-width: 480px) {
-  .wrapper {
-    width: 100%;
-    }
-  
-  .main-wrapper, .sidebar, .footer {
-    margin: 0 auto;
-    width: 90%;
-    }
-  
-  .sidebar {
-    float: none;
-    display: block;
-    }
-
-  .sidebar-image {
-    margin: 0 auto;
-    width: 33%;
-    margin-top:25px;
-    }
-
-  .sidebar .sidebar-image img {
-    width: 100%;
-    }
-    
-  .footer {
-    margin-bottom: 25px;
-    }
-  
-  }
-
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
-
-body {
-  background: linear-gradient(rgb(10,5,0,0.05), rgb(10,5,0,0.1)), url("/skaiabg.png") no-repeat fixed;
-  background-size: cover;
-  font-family: "Readex Pro", Open Sans, sans-serif;
-  }
-
-.box {
-  border-radius: 1.5em 0.175em;
-  background: rgb(10,5,0,0.85);
-  color: white;
-  border: 1px solid #aae6ff;
-  padding: 0.75em 1.25em;
-  }
-  
-a, .links li:before, .links li:after, .links .last {
-  color: #1896ca;
-  }
-  
-.sidebar-image img {
-  border-radius: 0.175em;
-  }
-
-
-/*Alternate style of spacers for nav links. Replace with "" for no spacer characters.*/  
-.links li:before {
-  content: " ";
-  }
-
-.links li:after {
-  content: " â¬ª ";
-  }
-
-.links .last:after {
-  content: " ";
-  }
-
-/*Increase gap between automatic spacers.*/
-.links li:before, .links li:after {
-  letter-spacing: 0.375em;
-  }
-    </style>
-  </head>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>!-- Your Site Name Here --!</title>
+      <link href="01.css" rel="stylesheet" type="text/css" media="all">
+      <link rel="icon" type="image/png" href="https://neothemes.neocities.org/images/favicon.gif" />
+   </head>
+   <body class="scroll">
+      <div id="container">
+      <div id="header">
+         <h1 class="title">Your Site Name <br>(or graphic)</h1>
+      </div>
+      <div id="wrapper">
+         <div id="two-boxes">
+            <div class="box-one scroll">
+               <div class="section-title">
+                  Heading
+               </div>
+               <div class="content">
+                  <p><strong>Layout Features</strong></p>
+                  <ul>
+                     <li>Fully responsive layout on any size device.</li>
+                     <li>Fixed width divs that add a scrollbar as opposed to stretching.</li>
+                     <li>Navigation section moves to top when window is resized.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="box-two scroll">
+               <div class="section-title">Navigation</div>
+               <div class="nav-wrapper">
+                  <button><a href="/">Home</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>    
+                  <button><a href="#">Link</a></button>
+               </div>
+            </div>
+         </div>
+         <div id="two-boxes">
+            <div class="box-three scroll">
+               <div class="section-title">Heading</div>
+               <div class="content">
+                  <p>The great thing about this is that you can write as much as you like, and it just adds a scrollbar. Just keep writing until you can write no more!</p>
+               </div>
+            </div>
+               <div class="box-four scroll">
+                  <div class="section-title">Heading</a></div>
+                  <div class="content">
+                     <p>The great thing about this is that you can write as much as you like, and it just adds a scrollbar. Just keep writing until you can write no more!</p>
+                  </div>
+               </div>
+         </div>
+         <div id="footer">
+            <p>© Layout by <a href="https://neothemes.neocities.org/" target="_blank">NeoThemes</a></p>
+         </div>
+      </div>
+   </body>
+</html>
