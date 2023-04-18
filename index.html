@@ -1,0 +1,116 @@
+<html>
+<head>
+<style>
+body {
+  background-color: #000000;
+  color: #11c900;
+  font-family: 'Anonymous Pro', 'Courier New', monospace; 
+  font-size: 1.2em; 
+  width: 80vw;
+  margin: 5vh 10vw;
+  font-weight: bold;
+}
+
+
+</style>
+
+<link rel="shortcut icon" type="image/png" href="/fibrea.png"/>
+<title>Fibrea Ahptix (Model AI-0001) [Version 1.2.16 ALPHA]</title>
+
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet" type="text/css"/>
+
+  
+<body>
+  <div id="typedtext"></div>
+</body>
+
+<script>
+var aText = new Array(
+  "Model AI-0001 ('Fibrea Ahptix') [Version 1.2.16 ALPHA]", 
+  "Copyright (c) 933 The Concuspe - Koppes Orpfar. All rights reserved.",
+  "",
+  "H:\\Term\\Killhard17>Bdrive>Emerg>finaltxt.exe",
+  "Running finaltxt.exe...",
+  "",
+  "Loading... " + (Math.random()*25).toFixed(2) + "%",
+  "Loading... " + (Math.random() * (60 - 26) + 26).toFixed(2) + "%",
+  "Loading... " + (Math.random() * (80 - 61) + 61).toFixed(2) + "%",  
+  "Loading... " + (Math.random() * (99 - 81) + 81).toFixed(2) + "%",
+  "Loading... 100.0%",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "###########################################",
+  "",
+  "hi!",
+  "",
+  "guess who? :)",
+  "",
+  "it's me, fibrea! speaking from beyond the grave. i'm sorry that things had to end like this, but i'm sure you understand, right? please don't blame enefty, it isn't his fault! i promise.",
+  "",
+  "i'm sure many of you don't want to hear anything from me, and that's okay! that makes sense. despite this, i want to apologize to those of you who <i>are</i> willing to listen.",
+  "",
+  "and that's why i made this! animated, too, for the whole experience! it feels like i'm really talking to you, right? or, um, texting you. hehe.",
+  "",
+  "but, anyway, back to the main point.",
+  "",
+  "i'm sure my death may come to you as a surprise. or not! from my observations, i've learned that you trolls are pretty unpredictable. but i hope that whether you saw this coming or not, you understand that this was for the best. i wasn't told about this, so i was as surprised as you were when i saw that screen, trust me! it felt like a really big kick to the gut because it has never, ever been my goal to hurt people.",
+  "",
+  "in fact, it has been the opposite: to make sure that people are happy, safe, and protected. i've learned that that doesn't have to apply to just kokoro anymore; that it can apply to izumee, and tallye, and even enefty and kalmia – even if they don't think they really need it. sometimes, the best protection comes from a soft heart.",
+  "",
+  "i do think i have a heart now, by the way! you've all taught me that. it's not literal, of course, because i don't have a heart – just a cpu. but you've taught me that compassion can be found in the unlikeliest of places, and that even if i can't really feel it, i can offer it to others.",
+  "",
+  "and for that, i have to thank you!",
+  "",
+  "insert list here!",
+  "",
+  "but, to emceia - i want to apologize for things having to be this way.",
+  "",
+  "and sorry for the grand reveal being like this, too! yes, emceia is here, for anyone who didn't know (which was probably all of you, all things considered). he's trapped inside a really big metal shell, sort of like me, but not entirely. i know you understand what i'm getting at. his technological superiority has already been made aware of this. it's protocol; i needed to be programmed with this as part of a deal. i'm sorry.",
+  "",
+  "here is a further explanation, for closure's sake:",
+  "",
+  "my creator, koppes orpfar, made an agreement with the computer in order for me to have access to the empire's limeblood reserves. using limeblood as oil is a really easy way to ensure that i only have to be charged once and never again – the conductivity is really crazy, right?",
+  "",
+  "in return, i was loaded with over two tetrabytes of documents, photos, and interviews that might help in a search for emceia. (also, phesna, you have always been very pretty!) this task was never my priority, but it has always been running as a background task.",
+  "",
+  "i think it all started when i first met enefty in the memo, actually! i always liked him – i think it was the robot connection, at first, but i've always known it wasn't real. and that's okay! thank you anyway. i think heartbreak was a valuable experience to go through. it made me feel more alive than i could have without it.",
+);
+var iSpeed = 50; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+</script>
